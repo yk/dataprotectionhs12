@@ -1,0 +1,142 @@
+\documentclass{article}
+\usepackage{todonotes}
+\linespread{1.3}
+
+\begin{document}
+
+
+\section{Introduction}
+\todo{$1/2$ page}
+
+\section{Commercial, Free and Open Source Software}
+\todo{$1$ page}
+In this section, we will give an overview over the different methodologies
+in software development with respect to sharing their source code.
+\todo{intro}
+\subsection{Source Code}
+In 1936, Alan Turing introduced the ``a-machine''
+(now called the \emph{Turing-Machine}):
+A hypothetical device that reads and manipulates an infinitely long
+\emph{tape}, which has symbols written on it.
+Turing showed that, given the correct configuration of such a machine,
+it would be able to execute any desired algorithm on the input
+symbols and therefore calculate any \emph{computable} number.
+Furthermore, Turing showed that a special version of such a machine,
+a \emph{universal} Turing-Machine, could emulate any of the above
+machines by encoding the configuration of the emulated machine
+(the desired algorithm) onto the input tape in front of the actual
+input data on which the algorithm would operate. 
+Whereas the Turing-Machine has a strong presence in theoretical
+computer science, where it helps researchers understand the limits of
+mechanical computation, it has also been a foundation of practical
+computing. Focus shifted from electronic hardware that was
+specifically built for one purpose, say an electronic calculator
+that adds two numbers, to hardware that could read and execute any
+desired instruction, in this case ``add'', before also reading the
+input data for this instruction.
+
+This was the origin of computers as we know them today.
+The \emph{Central Processing Unit}, or CPU, is an attempt to realize the
+concept of a Turing-Machine in the real world and its input tape is
+realized by the \emph{Random Access Memory}, or RAM, which is present
+in any computer. The CPU will fetch instructions as well as the data to
+execute these instructions on from the RAM and will write the results
+back to the RAM. The sequence of instructions executed by the CPU are
+commonly called a \emph{computer program}. The instructions themselves
+are very basic (e.g. ``add'', ``invert'', ``AND''), but by sequencing
+them correctly, one can encode any desired algorithm, from simple
+addition to programs like Microsoft Word or Google Earth.
+
+Given the degree of complexity of modern software, it is clear that
+it would be practically impossible to generate something like Google
+Earth from these basic instructions within reasonable time. For this,
+there are programs called \emph{compilers}. By using a compiler, a
+programmer is able to write instructions in a \emph{high level language},
+such as C or Java, where he has much more powerful tools at his
+disposal. The compiler will then translate this high level language
+into the basic instructions from above and thus make it readable to
+the CPU. The generated basic instruction sequence is commonly referred
+to as the \emph{machine code} or \emph{executable} of a program,
+whereas the high level
+text is called the \emph{source code}. Since the process of compiling
+is not an \emph{injective} function, it is generally very hard
+(even theoretically impossible) to obtain the original source code
+from the machine code. This provides a degree of secrecy, especially
+given the vast complexity of machine code, and a series of issues
+have emerged about how to handle this secrecy. In the following, we
+will present the three main approaches to these issues. 
+\subsection{Commercial Software}
+Commercial software is the classic form of software. It is usually
+developed
+within a company in response to a customer's request, as a new product
+to be launched or as an in-house tool to enhance productivity.
+Since the company's employees earn some sort of salary, newly
+developed software represents a substantial amount of work that
+has been put into developing it and naturally, the company would like
+to be reimbursed for that by whomever uses that software. The most
+logical way to do this is to charge users a fee via either a 
+\emph{purchase} or a periodic \emph{subscription fee}.
+
+Within such an environment, the customer is often given just the
+executable to run the program. The company will usually keep the
+source code as a secret for various reasons:
+\begin{itemize}
+  \item Distributing the source code would make it much easier to
+illegally share the software.
+\item Security holes in the code may be found easily by hackers.
+\item Secret algorithms may be openly visible.
+\end{itemize}
+In general, commercial software producers will argue that
+distributing their source code will allow people to take advantage
+of the work the company put into development without having to
+reimburse the company for it.
+\subsection{GNU and the Free Software Foundation}
+As the tale goes, one day, \emph{Richard Stallman} found a bug
+in the driver software for a printer at his university. With
+the intention of fixing the but, he asked the vendor for the
+driver's source code, but the vendor didn't comply. Stallman then
+decided to start \emph{GNU}:
+\begin{quote}
+Starting this Thanksgiving I am going to write a complete
+Unix-compatible software system called GNU (for Gnu's Not Unix),
+and give it away free to everyone who can use it.
+Contributions of time, money, programs and equipment
+are greatly needed. \todo{citation}
+\end{quote} 
+He later went on to start the \emph{Free Software Foundation}
+dedicated to promote the spreading of free software. \emph{Free},
+in this context, has the meaning of \emph{free speech} rather than
+\emph{free beer}.
+
+The Free Software Foundation strongly disagrees with the views held
+by commercial software vendors.
+
+In order for a program to be classified as free
+software, the foundation states, it must possess four basic freedoms:
+\subsection{The Open Source Initiative}
+\todo{end}
+
+\section{Comparison of Software Licences}
+\todo{$1$ page}
+\todo{intro}
+\subsection{The MIT license}
+\subsection{The BSD license}
+\subsection{The Apache license}
+\subsection{The GPL}
+\subsection{The LGPL}
+\todo{end}
+
+\section{Relation to data protection}
+\todo{$1$ page}
+\todo{intro}
+\todo{end}
+
+\section{Ethical Issues}
+\todo{$3/2$ page}
+\todo{intro}
+\todo{end}
+
+\section{Conclusions}
+\todo{$1/2$ page}
+
+\end{document}
