@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage{todonotes}
-\linespread{1.3}
+% \linespread{1.3}
 
 \begin{document}
 
@@ -13,8 +13,9 @@ In this section, we will give an overview over the different methodologies
 in software development with respect to sharing their source code.
 \todo{intro}
 \subsection{Source Code}
-In 1936, Alan Turing introduced the ``a-machine''
-(now called the \emph{Turing-Machine}):
+In 1936, Alan Turing
+introduced the ``a-machine'', nowadays
+called the \emph{Turing-Machine}:
 A hypothetical device that reads and manipulates an infinitely long
 \emph{tape}, which has symbols written on it.
 Turing showed that, given the correct configuration of such a machine,
@@ -170,11 +171,11 @@ software is a social problem and free software is the solution.
 \end{quote}
 In legal terms, the Open Source
 definition does not differ much from that of Free Software and there
-are few instances, where they are incompatible. We will see
-such instances in section \todo{ref}.
+are few instances, where they are incompatible, for example in the
+case of the \emph{NASA Open Source Agreement}\todo{cite}, which we will not
+discuss further here.
 \todo{end}
 \section{Comparison of Software Licences}
-\todo{$1$ page}
 \todo{intro}
 \todo{warranty}
 \todo{copyright}
@@ -184,7 +185,7 @@ Out of the philosophy around free software, the
 \emph{GNU General Public License} has been
 created in order to protect the fundamental freedoms of the users.
 Under the GPL, users are granted permission to 
-\quote{use, share, study and modify} the program if they wish.
+``use, share, study and modify''\todo{cite} the program if they wish.
 A central theme is the use of \emph{Copyleft} in order to ensure
 that the original author's work will sustain these rights in
 derived works:
@@ -199,17 +200,50 @@ licensed under the GPL in his or her program, then that program
 must also be licensed under the GPL.
 \subsection{The LGPL}
 \todo{cite}
+Though under the GPL, it is allowed to \emph{use} (i.e. run) a
+GPL-licensed program
+in a proprietary context, as do many companies by using the GNU C
+compiler to compile their programs, it is not allowed to build
+another program on top of the GPL-licensed program, without
+modifying its source code, to then release it as proprietary
+software (or under any other license).
+
+In programming, when one program uses the functionality of another
+program without modifying it, it is called \emph{linking} and it
+is the machine equivalent to \emph{running} the program as a human,
+which, as stated above, is allowed in a proprietary context.
+
+The LGPL, or \emph{Lesser GNU General Public License}, addresses
+this by not requiring programs that only link to the licensed code
+to be released under the same license. This modification has great
+impacts on the widespread adoption of a program, since businesses
+can now incorporate such software into theirs.
 \subsection{The MIT and BSD licenses}
 \todo{cite}
+The MIT and BSD licenses are just two examples of a whole family of
+licenses that place very few restrictions onto usage of the source
+code. Apart from a warranty statement, they basically grant
+permission to anybody, without restriction, to do whatever they
+want with it, as long as they retain the original author's
+copyright notice and the license text itself with the licensed
+source code.
+
+These licenses are often used by people who want to achieve the
+fastest possible spreading of their work, for example researchers
+at a university.
+\subsection{Dual Licensing}
+Instead of choosing one license for one's project, it is possible
+to dual license it to get the best out of both worlds. In essence,
+this means that one can release his software on one hand under the
+GPL for free for people who would like to use it in a
+non-proprietary context and on the other hand under some other
+license demanding a fee for businesses who might want to
+incorporate the software into their proprietary product and are
+unable to do so via the GPL-version of the code.
 \todo{end}
 
-\section{Relation to data protection}
-\todo{$1$ page}
-\todo{intro}
-\todo{end}
-
-\section{Ethical Issues}
-\todo{$3/2$ page}
+\section{Ethical issues and relation to data protection}
+\todo{$2$ pages}
 \todo{intro}
 \todo{end}
 
